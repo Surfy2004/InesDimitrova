@@ -1,0 +1,44 @@
+﻿<Window x:Class="InesDimitrova.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InesDimitrova"
+        mc:Ignorable="d"
+        Title="Login" Height="300" Width="300" Background= "LightGreen">
+
+    <Border Background = " Black" Margin = "20" CornerRadius = "20">
+        <StackPanel>
+            <!-- This is not functional -->
+
+            <Label Content = "Log In"
+               Foreground = "White"
+               FontSize = "25"
+               HorizontalAlignment ="Center"/>
+
+            <Separator></Separator>
+            <Label Content = "Username"
+                   Foreground = "White"/>
+            <TextBox x:Name = "txtUsername"
+                     Background = " #545"
+                     Foreground = "White"
+                     FontSize = "18"/>
+
+            <Separator></Separator>
+            <Label Content = "Password"
+                   Foreground = "White"/>
+            <PasswordBox x:Name = "txtPassword"
+                     Background = " #545"
+                     Foreground = "White"
+                     FontSize = "18"></PasswordBox>
+            
+                <Button Content="Submit"
+                    Margin=" 60,30"
+                    Background="#545d6a"
+                    FontSize="18"
+                    Foreground="White" Click="Button_Click"></Button>
+
+
+        </StackPanel>
+    </Border>
+</Window>
