@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Windows;
@@ -20,7 +20,10 @@ namespace InesDimitrova
             {
                 if (sqlCon.State == System.Data.ConnectionState.Closed)
                     sqlCon.Open();
-                string query = "SELECT * FROM Book_Info";
+                string query = "SELECT bi.Book_Title AS title, bi.Book_Author AS author, bu.Holder_Id AS holder, na.Book_Id AS is_new " +
+"FROM Book_Info bi " +
+"INNER JOIN Book_Unit bu ON bi.ISBN = bu.ISBN " +
+"LEFT JOIN Newly_Added na ON bu.Book_Id = na.Book_Id;";
 
                 SqlCommand sqlCommand = new SqlCommand(query, sqlCon);
                 sqlCommand.CommandType = CommandType.Text;
@@ -32,7 +35,18 @@ namespace InesDimitrova
 
                 for(int i=0; i<titles.Count && reader.Read(); i++)
                 {
-                    titles[i].Content = reader["Book_Title"];
+                    titles[i].Content = reader["title"];
+                    authors[i].Content = reader["author"];
+                    availabilities[i].Content = reader["holder"];
+                    var t = reader.GetSqlValue(4);
+                    if (t == DBNull.Value)
+                    {
+                        recentBooks[i].Content = "";
+                    }
+                    else
+                    {
+                        recentBooks[i].Content = "New";
+                    }
                 }
                 reader.Close();
             }
