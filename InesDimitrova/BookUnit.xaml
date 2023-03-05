@@ -4,22 +4,31 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InesDimitrova"
-        mc:Ignorable="d"
+        mc:Ignorable="d"       
         Title="Books" Height="450" Width="800">
-    <Grid>
+  
+
+  <Grid>
+    <Border  BorderBrush="Red" BorderThickness="1,1,1,1" CornerRadius="10,10,10,10">
+      <Border.Background>
+        <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+          <GradientStop Color= "DodgerBlue" Offset="0"/>
+          <GradientStop Color="DarkMagenta" Offset="0.567"/>
+        </LinearGradientBrush>
+      </Border.Background>
         <StackPanel x:Name="MainPanel">
             <Label Content="Books"
-                   Foreground="Black"
+                   Foreground="White"
                    FontSize="50"
                    HorizontalAlignment="Center"/>
             <Separator>
             </Separator>
             <Grid Height="341">
-                <TextBox Background="Pink" HorizontalAlignment="Left" Margin="35,20,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="150"/>
-                <TextBox Background="LightBlue" HorizontalAlignment="Left" Margin="421,20,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="150"/>
-                <TextBox Background="LightBlue" HorizontalAlignment="Left" Margin="35,191,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="150"/>
+                <TextBox Background="FloralWhite" HorizontalAlignment="Left" Margin="35,20,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="150"/>
+                <TextBox Background="PaleVioletRed" HorizontalAlignment="Left" Margin="421,20,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="150"/>
+                <TextBox Background="PaleVioletRed" HorizontalAlignment="Left" Margin="35,191,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="150"/>
 
-                <TextBox Background="Pink" HorizontalAlignment="Left" Margin="421,191,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="150"/>
+                <TextBox Background="FloralWhite" HorizontalAlignment="Left" Margin="421,191,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="150"/>
                 <Label Content="Title:" HorizontalAlignment="Left" Margin="178,222,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.43,0.503"/>
 
                 <Label Content="Title:" HorizontalAlignment="Left" Margin="175,44,0,0" VerticalAlignment="Top"/>
@@ -44,15 +53,15 @@
                 <Label Content="Unknown availability" Name="label1Availability" HorizontalAlignment="Left" Margin="231,110,0,0" VerticalAlignment="Top" Width="120"/>
                 <Label Content="Unknown isNew" Name="label1IsNew" HorizontalAlignment="Left" Margin="171,138,0,0" VerticalAlignment="Top" Width="120"/>
                 <Label Content="Unknown availability" Name="label2Availability" HorizontalAlignment="Left" Margin="651,110,0,0" VerticalAlignment="Top" Width="120"/>
-                <Label Content="Unknown isNew" Name="label2IsNew" HorizontalAlignment="Left" Margin="573,141,0,0" VerticalAlignment="Top" Width="120"/>
-                <Label Content="Unknown isNew" Name="label3Availability" HorizontalAlignment="Left" Margin="231,292,0,0"  VerticalAlignment="Top" Width="120"/>
-                <Label Content="Unknown isNew" Name="label3IsNew" HorizontalAlignment="Left" Margin="175,312,0,0" VerticalAlignment="Top" Width="120"/>
+                <Label Content="Unknown isNew" Name="label2IsNew" HorizontalAlignment="Left" Margin="573,141,0,0" VerticalAlignment="Top" Width="120" Foreground ="Green"/>
+                <Label Content="Unknown isNew" Name="label3Availability" HorizontalAlignment="Left" Margin="231,292,0,0"  VerticalAlignment="Top" Width="120" Foreground ="Green"/>
+                <Label Content="Unknown isNew" Name="label3IsNew" HorizontalAlignment="Left" Margin="175,312,0,0" VerticalAlignment="Top" Width="120" Foreground ="Green"/>
                 <Label Content="Unknown availability" Name="label4Availability" HorizontalAlignment="Left" Margin="651,283,0,0" VerticalAlignment="Top" Width="120"/>
-                <Label Content="Unknown isNew" Name="label4IsNew" HorizontalAlignment="Left" Margin="573,309,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.442,-1.063"/>
+                <Label Content="Unknown isNew" Name="label4IsNew" HorizontalAlignment="Left" Margin="573,309,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.442,-1.063" Foreground ="Green"/>
 
             </Grid>
 
         </StackPanel>
-
+</Border>
     </Grid>
 </Window>
