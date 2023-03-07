@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid>
+            <Border  BorderBrush="Red" BorderThickness="1,1,1,1" CornerRadius="10,10,10,10">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                        <GradientStop Color= "DodgerBlue" Offset="0"/>
+                        <GradientStop Color="DarkMagenta" Offset="0.567"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <StackPanel x:Name="MainPanel">
+                    <DockPanel HorizontalAlignment="Left" Height="50" LastChildFill="False" VerticalAlignment="Top" Width="800" Background="#FF17337E">
+                        <Button Content="Sign up" Height="50" VerticalAlignment="Top" Width="75" Background="{x:Null}" Foreground="White" BorderBrush="#00707070" />
+                        <Button Content="Log in" Height="50" VerticalAlignment="Top" Width="75" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" />
+                        <Button Content="Home" Height="50" VerticalAlignment="Top" Width="75" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" />
+                        <Button Content="Your Books" Height="50" VerticalAlignment="Top" Width="75" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" />
+                        <Button Content="Updates" Height="50" VerticalAlignment="Top" Width="75" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}"/>
+                        <Image Height="50" VerticalAlignment="Center" Width="50" Source="H:\sign-out-icon-17.png" DockPanel.Dock="Right" Margin="30,0"/>
+                        <Button Content="User ID:&#xD;&#xA;01234" Height="50" VerticalAlignment="Top" Width="75" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" DockPanel.Dock="Right"/>
+                    </DockPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
     </Grid>
 </Window>

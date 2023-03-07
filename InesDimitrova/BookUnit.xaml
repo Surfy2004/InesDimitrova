@@ -23,8 +23,8 @@
             <Button Content="Log in" Height="50" VerticalAlignment="Top" Width="75" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" />
             <Button Content="Home" Height="50" VerticalAlignment="Top" Width="75" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" />
             <Button Content="Your Books" Height="50" VerticalAlignment="Top" Width="75" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" />
-            <Button Content="Updates" Height="50" VerticalAlignment="Top" Width="75" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Click="Button_Click" />
-            <Image Height="50" VerticalAlignment="Center" Width="50" Source="C:\Users\inesd\Desktop\unnamed.png" DockPanel.Dock="Right" Margin="30,0"/>
+            <Button Content="Updates" Height="50" VerticalAlignment="Top" Width="75" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}"/>
+                        <Image Height="50" VerticalAlignment="Center" Width="50" Source="H:\sign-out-icon-17.png" DockPanel.Dock="Right" Margin="30,0"/>
             <Button Content="User ID:&#xD;&#xA;01234" Height="50" VerticalAlignment="Top" Width="75" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" DockPanel.Dock="Right"/>
           </DockPanel>
         </Grid>
